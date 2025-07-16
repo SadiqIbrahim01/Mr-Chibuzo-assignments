@@ -1,0 +1,391 @@
+Assignment 2.9 ++
+
+Assignment 2.7
+
+a)Comments 
+      b)Conditional Statement
+      c)Division(\) and Modulus(%)
+      d)Innermost
+      e)Variable
+
+Assignment 2.8
+
+a) System.out.print("Enter an integer: ");
+
+b) a = b * c;
+
+c)// This program performs a sample payroll calculation
+
+
+Assignment 2.9
+
+a) False. Why because addition is not executed first overall as it’s only executed first within the parentheses.
+
+b) False. Why because Variable names must begin with a letter, underscore(_), or dollar sign($). They also can not contain special characters examples are ! and @
+
+c) True. Why because they contain special characters and starts with digits 
+
+d)False. Why because division(/) has higher precedence than addition(+)
+
+
+
+Assignment 2.10
+
+a) Displays the value of x + 5, while formatted as a decimal integer.
+
+b) Displays the result of multiplying x and y, using formatted output.
+
+c) Displays the values of x and y using formatted output.
+
+d) Displays a comparison between the sum and the product of x and y.
+
+
+
+Assignment 2.11
+
+a) The value p is not modified
+
+b) No variable is modified
+
+c) The value p is not modified
+
+d) The value k is not modified
+
+
+
+Assignment 2.12
+
+Answers are option...A, B, D and F
+
+
+Assignment 2.13
+
+Output is 1314
+Why because both printf statements print integers without a new line so output appears on thesame line.
+
+
+
+Assignment 2.14
+
+a) Using one System.out.println statement:
+   public class DisplayNumbersA {
+    public static void main(String[] args) {
+        System.out.println("1 2 3 4");
+    }
+}
+
+b) Using four System.out.print statements:
+   public class DisplayNumbersB {
+    public static void main(String[] args) {
+        System.out.print("1 ");
+        System.out.print("2 ");
+        System.out.print("3 ");
+        System.out.print("4\n"); // or use println("") after the last number
+    }
+}
+
+c) Using Use one System.out.printf statement:
+   public class DisplayNumbersC {
+    public static void main(String[] args) {
+        System.out.printf("%d %d %d %d%n", 1, 2, 3, 4);
+    }
+}
+
+
+
+Assignment 2.15
+
+import java.util.Scanner;
+public class Arithmetic {
+  public static void main(String [] args) {
+  Scanner input = new Scanner(System.in);
+  
+  System.out.print("Enter first number: ");
+  int number1 = input.nextInt();
+
+  System.out.print("Enter second number: ");
+  int number2 = input.nextInt();
+
+  int square1 = number1 * number1;
+  int square2 = number2 * number2;
+  System.out.println("The square of the first number is "+ square1);
+  System.out.println("The square o the second number is "+ square2);
+
+  int sum = square1 + square2;
+  int difference = square1 - square2;
+  System.out.println("The sum of the squares is "+ sum);
+  System.out.println("The difference of the squares is "+ difference);
+
+}
+}
+
+
+2.16
+
+import java.util.Scanner;
+
+public class CompareToHundred {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        // Prompt user for input
+        System.out.print("Enter an integer: ");
+        int number = input.nextInt();
+
+        int square = number * number;
+
+        // Compare number to 100
+        if (number > 100)
+            System.out.printf("%d is greater than 100%n", number);
+        if (number == 100)
+            System.out.printf("%d is equal to 100%n", number);
+        if (number != 100)
+            System.out.printf("%d is not equal to 100%n", number);
+        if (number < 100)
+            System.out.printf("%d is less than 100%n", number);
+
+        // Compare square to 100
+        if (square > 100)
+            System.out.printf("%d (square) is greater than 100%n", square);
+        if (square == 100)
+            System.out.printf("%d (square) is equal to 100%n", square);
+        if (square != 100)
+            System.out.printf("%d (square) is not equal to 100%n", square);
+        if (square < 100)
+            System.out.printf("%d (square) is less than 100%n", square);
+    }
+}
+
+
+Assignment 2.17
+
+import java.util.Scanner;
+
+public class ThreeNumberStats {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        // Prompt for and read three integers
+        System.out.print("Enter first integer: ");
+        int num1 = input.nextInt();
+
+        System.out.print("Enter second integer: ");
+        int num2 = input.nextInt();
+
+        System.out.print("Enter third integer: ");
+        int num3 = input.nextInt();
+
+        // Calculate sum, average (integer), and product
+        int sum = num1 + num2 + num3;
+        int average = sum / 3;
+        int product = num1 * num2 * num3;
+
+        // Determine smallest
+        int smallest = num1;
+        if (num2 < smallest) smallest = num2;
+        if (num3 < smallest) smallest = num3;
+
+        // Determine largest
+        int largest = num1;
+        if (num2 > largest) largest = num2;
+        if (num3 > largest) largest = num3;
+
+        // Display results
+        System.out.printf("Sum: %d%n", sum);
+        System.out.printf("Average: %d%n", average);
+        System.out.printf("Product: %d%n", product);
+        System.out.printf("Smallest: %d%n", smallest);
+        System.out.printf("Largest: %d%n", largest);
+    }
+}
+
+
+Assignment 2.18
+
+public class ShapesDisplay {
+    public static void main(String[] args) {
+        System.out.println("*********        ***          *          *");
+        System.out.println("*       *      *     *       ***        * *");
+        System.out.println("*       *     *       *     *****      *   *");
+        System.out.println("*       *     *       *       *       *     *");
+        System.out.println("*       *     *       *       *      *       *");
+        System.out.println("*       *     *       *       *       *     *");
+        System.out.println("*       *     *       *       *        *   *");
+        System.out.println("*       *      *     *        *         * *");
+        System.out.println("*********        ***          *          *");
+    }
+}
+
+
+Assignment 2.19
+
+ ****
+ ******
+*******
+ ******
+ ****
+
+Assignment 2.20
+
+*
+***
+*****
+****
+**
+
+Assignment 2.21
+
+*************** 
+
+Assignment 2.22
+
+****
+*****
+******
+
+Assignment 2.23
+
+  *
+ ***
+*****
+ ***
+
+Assignment 2.24
+
+import java.util.Scanner;
+
+public class MinMaxFinder {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        
+        System.out.print("Enter first integer: ");
+        int num1 = input.nextInt();
+
+        System.out.print("Enter second integer: ");
+        int num2 = input.nextInt();
+
+        System.out.print("Enter third integer: ");
+        int num3 = input.nextInt();
+
+        System.out.print("Enter fourth integer: ");
+        int num4 = input.nextInt();
+
+        System.out.print("Enter fifth integer: ");
+        int num5 = input.nextInt();
+
+        
+        int smallest = num1;
+        int largest = num1;
+
+        
+        if (num2 < smallest) smallest = num2;
+        if (num3 < smallest) smallest = num3;
+        if (num4 < smallest) smallest = num4;
+        if (num5 < smallest) smallest = num5;
+
+        if (num2 > largest) largest = num2;
+        if (num3 > largest) largest = num3;
+        if (num4 > largest) largest = num4;
+        if (num5 > largest) largest = num5;
+
+        
+        System.out.printf("Smallest: %d%n", smallest);
+        System.out.printf("Largest: %d%n", largest);
+    }
+}
+
+
+Assignment 2.25
+
+import java.util.Scanner;
+
+public class DivisibleByThree {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        // Prompt the user
+        System.out.print("Enter an integer: ");
+        int number = input.nextInt();
+
+        // Check divisibility by 3
+        if (number % 3 == 0) {
+            System.out.printf("%d is divisible by 3.%n", number);
+        } else {
+            System.out.printf("%d is not divisible by 3.%n", number);
+        }
+    }
+}
+
+
+Assignment 2.26
+
+import java.util.Scanner;
+
+public class MultipleCheck {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        // Prompt for input
+        System.out.print("Enter the first integer: ");
+        int first = input.nextInt();
+
+        System.out.print("Enter the second integer: ");
+        int second = input.nextInt();
+
+        // Triple the first and double the second
+        int tripled = first * 3;
+        int doubled = second * 2;
+
+        // Check if tripled is a multiple of doubled
+        if (tripled % doubled == 0) {
+            System.out.printf("%d (tripled) is a multiple of %d (doubled).%n", tripled, doubled);
+        } else {
+            System.out.printf("%d (tripled) is not a multiple of %d (doubled).%n", tripled, doubled);
+        }
+    }
+}
+
+
+Assignment 2.27
+
+public class Checkerboard {
+    public static void main(String[] args) {
+        System.out.println("* * * * * * * *");
+        System.out.println(" * * * * * * * *");
+        System.out.println("* * * * * * * *");
+        System.out.println(" * * * * * * * *");
+        System.out.println("* * * * * * * *");
+        System.out.println(" * * * * * * * *");
+        System.out.println("* * * * * * * *");
+        System.out.println(" * * * * * * * *");
+    }
+}
+
+
+Assignment 2.28
+
+import java.util.Scanner;
+
+public class CircleCalculations {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        // Prompt user for radius
+        System.out.print("Enter the radius of the circle: ");
+        int radius = input.nextInt();
+
+        // Display results using direct calculations
+        System.out.printf("Diameter: %d%n", 2 * radius);
+        System.out.printf("Circumference: %.5f%n", 2 * Math.PI * radius);
+        System.out.printf("Area: %.5f%n", Math.PI * radius * radius);
+    }
+}
+
+
+
+Assignment 2.29
+
+
+
+
